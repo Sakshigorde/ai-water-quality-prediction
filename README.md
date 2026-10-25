@@ -22,7 +22,6 @@ I built this project to explore how machine learning can be used to predict wate
 - Scikit-learn
 - Google Colab
 
-## Methodology
 ## What I Did
 1. Loaded and explored the Kaggle dataset.
 2. Checked for missing values and filled them using the median.
