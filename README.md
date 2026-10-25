@@ -51,4 +51,4 @@ For Class 1, the initial recall was **29.30%**, indicating that the model missed
 - Explore validated water-quality standards and independent datasets.
 
 ## Author
-Bioengineering student interested in machine learning and its applications in environmental biotechnology.
+https://github.com/Sakshigorde
