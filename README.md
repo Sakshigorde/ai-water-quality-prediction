@@ -1,54 +1,52 @@
 # AI-Based Water Quality Prediction
-
 ## Project Overview
-This project uses machine learning to predict water potability categories from physicochemical water-quality parameters. It demonstrates how data analysis and classification algorithms can be applied to water-quality datasets.
+I built this project to explore how machine learning can be used to predict water potability based on water-quality parameters. I used Python to analyze the dataset and trained two models: Random Forest and Decision Tree.
 
 ## Objective
-- Analyze water-quality parameters using Python.
-- Train machine learning models to classify water samples.
-- Compare Random Forest and Decision Tree performance.
-- Explore which features contribute most to model predictions.
-
+- Understand and analyze water-quality data.
+- Build machine learning models to predict water potability.
+- Compare the performance of Random Forest and Decision Tree.
+- Identify which water-quality parameters are important for prediction.
 ## Dataset
 - **Source:** [Kaggle — Water Potability Dataset](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
 - **Target column:** `Potability`
 - **Class 0:** Non-potable label
 - **Class 1:** Potable label
 
-## Technologies Used
+
+## Tools and Technologies
 - Python
-- Pandas and NumPy
+- Pandas
+- NumPy
 - Matplotlib
 - Scikit-learn
 - Google Colab
 
 ## Methodology
-1. Load and inspect the dataset.
-2. Handle missing values using median imputation.
-3. Separate features and target labels.
-4. Split the data into training and testing sets.
-5. Train Random Forest and Decision Tree classifiers.
-6. Evaluate models using accuracy, precision, recall, F1-score, and a confusion matrix.
-7. Visualize model accuracy and feature importance.
-8. Test predictions using sample water-quality measurements.
+## What I Did
+1. Loaded and explored the Kaggle dataset.
+2. Checked for missing values and filled them using the median.
+3. Split the data into training and testing sets.
+4. Trained Random Forest and Decision Tree models.
+5. Compared model performance using accuracy, precision, recall, and F1-score.
+6. Created graphs to visualize model accuracy and feature importance.
+7. Tested the model with sample water-quality values.
 
-## Initial Results
-The initial Random Forest model achieved **67.07% test accuracy**.
-
-For Class 1, the initial recall was **29.30%**, indicating that the model missed many samples belonging to that class. The Decision Tree model and threshold experiments should be evaluated using their actual measured results before drawing further conclusions.
-
+## Results
+The Random Forest model achieved **67.07% accuracy** on the test set.
+The recall for Class 1 was **29.30%**, which means the model failed to identify many samples belonging to this class. This shows that the model still needs improvement.
+I also trained a Decision Tree model to compare its performance with Random Forest.
 ## Limitations
-- Dataset labels are not a substitute for laboratory water-quality testing.
-- Model predictions do not certify that water is safe to drink.
-- Performance may vary with data quality and the samples used for training and testing.
-- Further validation and model improvement are needed.
-
-## Future Scope
-- Improve minority-class detection.
-- Compare additional classification algorithms.
-- Use cross-validation and careful hyperparameter tuning.
-- Evaluate probability calibration and model robustness.
-- Explore validated water-quality standards and independent datasets.
+- The model does not predict every sample correctly.
+- The dataset contains missing values.
+- The model has difficulty identifying Class 1 samples.
+- Predictions cannot confirm whether water is safe to drink; laboratory testing is required.
+## Future Improvements
+- Improve the model's prediction performance.
+- Try other machine learning algorithms.
+- Handle class imbalance more effectively.
+- Test the model using other water-quality datasets.
+- Explore its use in water-quality monitoring...
 
 ## Author
 https://github.com/Sakshigorde
